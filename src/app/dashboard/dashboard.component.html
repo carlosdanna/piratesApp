@@ -1,0 +1,10 @@
+<h3>Top Pirates</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let pirate of pirates" class="col-1-4" routerLink="/detail/{{pirate.id}}">
+    <div class="module hero">
+      <h4>{{pirate.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-pirate-search></app-pirate-search>
